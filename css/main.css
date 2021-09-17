@@ -1,0 +1,225 @@
+/*CSS HOME*/
+	*{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	
+	ul:first-of-type{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+	
+	header img{
+		max-height: 250px;
+		max-height: 200px;
+	}
+	ul>li>p{
+		font-size: 36px;
+		color: #291879;
+		text-align: center;
+		font-family: Roboto, helvetica, arial, sans-serif ;
+		flex-wrap:wrap;
+		margin-right: 10px;
+	}
+	
+	nav{
+		background-color: #291879;
+	}
+
+	.menu{
+		display: flex;
+		justify-content: space-between;
+		padding: 0 100px; /*Empurra os botões mais pra dentro, will*/
+	}
+	.menu>li{
+		padding: 20px 30px; /*Controla a grossura da barra preta, will*/
+	}
+	.menu>li>a{
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: white;
+	}
+
+	.flex2{
+		display: block;
+		flex-wrap: wrap;
+	}
+	body {
+		width: 100%;
+		min-height: 500px;
+		background-color: aliceblue;
+		}
+	h1{
+		font-size: 46px;
+		color: midnightblue;
+		margin-top: 40px;
+		font-family: 'Times New Roman', Times, serif;
+		text-align: center;
+	}
+	h2{
+		font-size: 25px;
+		color:midnightblue;
+		font-family: 'Times New Roman', Times, serif;
+		margin: 10px;
+		text-align: center;
+	}
+	
+	h3 {
+		font-size: 25px;
+		color:midnightblue;
+		font-family: 'Times New Roman', Times, serif;
+		margin: 10px;
+		text-align: center;
+	}
+
+	.texto2{
+		font-size: 20px;
+		color:midnightblue;
+		font-family: 'Times New Roman', Times, serif;
+		margin: 5px;
+		text-align: center;
+	}
+	a{
+		text-decoration: none;
+		font-size: 18px;
+	}
+	.texto{
+		float: left;
+		margin-left: 80px;
+		margin-right: 80px;
+		margin-bottom: 20px;
+		text-align: justify;
+		font-size: 18px;
+	}
+	
+	.textoh1 {
+		text-align: center;
+	}
+
+	.flex{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 800px;
+		margin: 0 auto;
+		/*Margin para centralizar*/
+		margin-bottom: 10px;
+		/*Para dar uma folga embaixo, não rolou de deixar juntas no mesmo margin, Will*/
+		
+	}
+	
+	.flex img{
+		max-width: 100%;
+		display: block;
+		border-radius: 25%;
+		border: 2px solid black;
+	}
+	
+	.flex>div>a>img:hover{
+		max-height: 102%;
+		max-width: 102%;
+		border-width: 3px;
+	}
+	
+	.flex>div{
+		flex: 1 1 200px;
+		margin: 10px;
+	}
+	.flex p{
+		text-align: center;
+	}
+
+	address{
+		display: block;
+		width: 100%;
+		border-top: 1px solid #333;
+		padding-top: 15px;
+		text-align: center;
+	}
+	footer{
+		background-color: midnightblue;
+		font-size: 1.2rem;
+		color: white;
+		text-align: center;
+	}	
+
+	.centro {
+		text-align: center;
+		font-size: 50px
+	}
+	
+	.skip-link {
+		position: absolute;
+		background-color: midnightblue;
+		color: white;
+	}
+
+	.skip-link: :focus {
+		top: 0;
+	}
+	
+	p.rodape span {
+		display: block;
+	}
+
+	p.textocont span {
+		display: block;
+	}
+	address span {
+		display: block;
+	}
+	.rodape {
+		display: block;
+		width: 100%;
+		border-top: 1px solid #333;
+		padding-top: 91px;
+		text-align: center;
+	}
+/*CSS FORMULÁRIO*/
+
+	.titulocontato {
+		font-size: 32px;
+		color: midnightblue;
+		border-bottom: 1px solid silver;
+		margin-left: 40px;
+		margin-bottom: 15px;
+		font-family: 'Times New Roman', Times, serif;
+		text-align: left;
+	}
+
+	.textocont{
+		margin-left: 40px;
+		font-size: 16px;
+	}
+	label{
+		color: midnightblue;
+		font-weight: bold;
+	}
+
+	.botao{
+		background-color: midnightblue;
+		color:white;
+		width: 75px;
+		height: 25px;
+		cursor: pointer;
+		margin-bottom: 40px;
+	}
+
+	input:hover, select:hover, textarea:hover{
+		border: 2px solid midnightblue;
+	}
+	input:focus, select:focus, textarea:focus{
+		background-color: linen;
+	}
+
+	/*Tabela*/
+
+	td th{
+		padding: 5px;
+	}
+
+	table{
+		margin: 10px;
+		margin-left: 40px;
+	}

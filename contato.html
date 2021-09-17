@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1"> 
+	<title>Contatos - Quádruplos Turismo e Viagens</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="form_erros.js"></script>
+</head>
+
+<body>
+    <a href="#maincontent" class="skip-link"> Pular para o conteúdo principal.</a>
+    <header>
+		<ul>
+			<li><a href="home.html"><img src="imagens/logo3.png" alt="logo da empresa quadruplos"></a></li>
+			<li><p>Quádruplos Turismo e Viagens <br>Desperte o turista dentro de você!</p></li>
+		</ul>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="nacionais.html">Nacionais</a></li>
+                <li><a href="internacionais.html">Internacionais</a></li>
+                <li><a href="quemsomos.html">A Empresa</a></li> 
+				<li><a href="contato.html">Contato</a></li>           
+            </ul>
+        </nav>
+	</header>
+    <div class="body">
+        <h1 class="titulocontato">Agende uma reunião</h1>
+        <p id="maincontent" tabindex="-1" class="textocont">
+            <span><strong>Quádruplos Turismo e Viagens</strong></span>
+            <span> <strong>Endereço:</strong> Av Dr. Ana Costa, 1200 - Vila Matias</span>
+            <span> <strong>CEP:</strong> 11060-002</span>
+            <span><strong>Tel:</strong> (13) 3251-597</span>
+            <span> <strong>E-mail:</strong> contato@quadruplos.com.br</span>
+            <span>   <span> <strong>Diretores:</strong> Arthur, Bruno, Davi e Rodrigo</span>
+            <span>  <strong>Cosultores:</strong></span>
+            <span> Juliana e Gabriela - Experts nas Regiões Norte e Nordeste</span>
+            <span> Camila e Júlio- Experts na Região Centro-oeste</span>
+            <span> Caio e Lucas - Experts nas Regiões Sudeste e Sul</span>
+            <span> Rafael, Henrique e Julia- Experts nas 3 américas (Norte, Central e Sul)</span>
+            <span> Gustavo e Gabriel- Experts na Europa</span>
+            <span> Giulia e Douglas- Experts na Ásia</span>
+            <span> Mariano e Raquel- Experts na África</span>
+            <span> Joel- Expert na Oceania</span>
+        </p>
+</div>
+    <form class="textocont" name="Q_Reuniao" method="POST" action="#" onsubmit="return validaForm(this)">
+<div class="textocont">
+    <label for="Q_reuniao">Assunto da Reunião:</label><br>
+        <select id="Q_reunião">
+            <option value="nort">Norte</option>
+            <option value="nord">Nordeste</option>
+            <option value="Ceo">Centro-oeste</option>
+            <option value="Sud">Sudeste</option>
+            <option value="Sul">Sul</option>
+            <option value="AmN">América do norte</option>
+            <option value="AmC">América central</option>
+            <option value="AmS">América do sul</option>
+            <option value="EU">Europa</option>
+            <option value="As">Ásia</option>
+            <option value="Afr">África</option>
+            <option value="Oce">Oceania</option>
+        </select><br><br>
+    
+        <label for="Q_nome">Nome*:<br></label>
+        <input type="text" id="Q_nome" size="40" maxlength="40" aria-required="true"/> <br><br>
+        
+        <label for="Q_telefone">Telefone:</label><br>
+        <input type="tel" id="Q_telefone" size="40"/> <br><br>
+        
+
+        <label for="Q_email">E-mail*:</label><br>
+        <input type="email" id="Q_email" size="40" aria-required="true"/> <br><br>
+        
+
+        <label for="data">Data e horário*:</label><br>
+        <input type="datetime-local" id="Q_data" aria-required="true"/><br><br>
+        
+        <label for="Q_cometario">Comentário</label><br>
+        <textarea id="Q_comentario" cols="45" rows="5"></textarea><br><br>
+        
+
+        <input class="botao" type="submit" value="Enviar"/>
+    </form>
+</div>
+    <footer id="rodape">
+        <address class="rodape">
+           <span> Av Dr. Ana Costa, 1200 - Vila Matias </span>
+           <span> Santos- SP</span>
+           <span>CEP: 11060-002</span>
+            <span>Tel: (13) 3251-5972</span>
+            <span> E-mail: contato@quadruplos.com.br</span>
+                <span>Todos os direitos reservados ao site www.quadruplosturismoeviagens.com.br</span>
+        </address>
+    </footer>
+</body>
+</html>
