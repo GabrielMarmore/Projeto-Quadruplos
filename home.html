@@ -19,63 +19,90 @@
 		"streetAddress" : "Av Dr. Ana Costa, 1200 - Vila Matias Santos- SP",
 		"postalCode" : "11060-002"
 		}
-	}
-</script>
+	}</script>
+    <script src='main.js'></script>
 </head>
 
 <body>
-    <header>
-        <h1>Quádruplos Turismo e Viagens</h1>
+    <header class='container'>
+        <h1><a href='#nacional'>Quádruplos Turismo e Viagens</a></h1>
         <nav>
-            <ul class="menu">
+            <ul id="menu">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="nacionais.html">Nacionais</a></li>
                 <li><a href="internacionais.html">Internacionais</a></li>
-                <li><a href="quemsomos.html">A Empresa</a></li> 
+                <li><a href="quemsomos.html">Empresa</a></li> 
 				<li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main  id="maincontent" tabindex="-1" class="flex">
-        <p>Seja bem vindo!</p>
-        <p class="textoh1">Desperte o Turista dentro de você com a Quádruplos Turismo e Viagens.</p>
+    <main  id="maincontent" tabindex="-1">
+       <p class='destaque'>Seja bem vindo a Quadruplos Turismo e Viagens!<span>✈️Já fez as malas?</span></p>
+        
+        <div class='backg'>
+            <div class='slider'>
+                <button class='btslider' onclick='troca(-1)'><</button>
+                <div id='dvload'>
+                    <div id='dvbarra'></div>
+                </div>
+                <button class='btslider' onclick='troca(1)'>></button>
+            </div>
+        </div>
 
-        <section class="texto">
+        <p class="destaque">Desperte o Turista dentro de você!</p>
+        <!--
+        <img id='slider'></br>
+        <a id="prev" href="javascript:menos()">Anterior</a>.<a id="next" href="javascript:mais()">Próximo</a>
+        <form name="form">
+            <input type=text name="texto">
+        </form>
+        -->
+
+
+        <section>
             <h2>Nossa história</h2>
+            
+            <p>A <strong>Quádruplos Turismo e Viagens</strong> atualmente conta com 25 funcionários, dentre eles, <strong>consultores 
+            experts</strong> nas mais diversas regiões nacionais (Norte, Nordeste, Centro-oeste, Sudeste e Sul) e internacionais (América do norte, América
+            central, América do sul, Europa, Ásia, África e Oceania) que estão esperando por você para lhe oferecer a sua <strong>melhor viagem</strong>, com as 
+            <strong>melhores dicas</strong>. Viaje com a gente nessa nova jornada, explore nosso site e agende uma consulta na nossa empresa para sair com a melhor
+            viagem da sua vida.
+            </p>
+            <button class='leia'">Leia mais</button>
+            
+            <span id='leiaMais'>
             <p>Somos uma Empresa familiar, tudo começou com nosso pai José que criou em 1990 uma pequena empresa de turismo,
             que era seu maior orgulho. José, junto de Roberta teve 4 filhos gêmeos (Arthur, Bruno, Davi e Rodrigo) e desde então formaram 
             uma bela sociedade de muito sucesso e conseguiram nos sustentar graças aos ganhos com a empresa, nascemos com o turismo implementado
             em nossos DNAS, desde pequenos já queríamos seguir no mesmo ramo do nosso pai, trabalhar com turismo era um sonho que a cada dia 
             aumentava dentro de nós.</p>
             
-            <p>Hoje, já graduados na faculdade de turismo e com experiência na área, buscamos dar continuidade a história 
+            <p>Hoje, já graduados na faculdade de <strong>turismo</strong> e com experiência na área, buscamos dar continuidade a história 
             da empresa de nossos pais, já aposentados, que se iniciou há 30 anos atrás. Estamos ingressando nossa história nesse mundo da internet, 
             buscando ampliar ainda mais essa história, aumentar nossas conquistas e conseguir realizar cada vez mais para nossos clientes, para isso
-            precisamos de <strong class="strong">VOCÊ</strong> nessa nova etapa.</p>
-            
-            <p>A Quádruplos Turismo e Viagens atualmente conta com 25 funcionários, dentre eles, <strong class="strong">consultores 
-            experts</strong> nas mais diversas regiões nacionais (Norte, Nordeste, Centro-oeste, Sudeste e Sul) e internacionais (América do norte, América
-            central, América do sul, Europa, Ásia, África e Oceania) que estão esperando por você para lhe oferecer a sua <strong class="strong"> melhor viagem</strong>, com as 
-            <strong class="strong">melhores dicas</strong>. Viaje com a gente nessa nova jornada, explore nosso site e agende uma consulta na nossa empresa para sair com a melhor
-            viagem da sua vida. E lembre-se: <strong class="strong">Desperte o turista dentro de você!</strong> 
-            </p>
+            precisamos de você nessa nova etapa. E lembre-se: <strong>Desperte o turista dentro de você!</strong></p>
+            </span>
         </section>
 
-		
-		<section class="texto2">
+		<section id='segundo'>
 		   <h2>AS MELHORES OPÇÕES PARA VOCÊ</h2>
-            <div><a href="nacionais.html"> <p>Nacionais</p> <img src="imagens/nacional.png" alt="Viagem Nacional. Clique na imagem para mais informações"></a></div>
-            <div><a href="internacionais.html"> <p>Internacionais</p> <img src="imagens/mundo.png" alt="Viagem Internacional. Clique na imagem para mais informações"></a></div>
+           <p class='destaque'>Roteiros turísticos nacionais e internacionais!</p>
+           <div class='container'>
+                <div id='nacional'>
+                    <a href="nacionais.html">
+                        <p>Nacionais</p> <img src="imagens/nacional.jpg" alt="Viagem Nacional. Clique na imagem para mais informações"></a>
+                </div>
+                <div id='inter'> 
+                    <a href="internacionais.html">
+                        <p>Internacionais</p><img src="imagens/mundo.jpg" alt="Viagem Internacional. Clique na imagem para mais informações">
+                    </a>
+                </div>
+            </div>
         </section>
         </main>
 
         <footer>
-            <div>
-                <p>Fale conosco: </p>
-                <p>Tel: <a href='tel:+551399999999'>(13)9999-9999</a></p>
-                <p>E-mail: <a href="mailto:contato@quadruplos.com.br">contato@quadruplos.com.br</a></p>
-            </div>
-
+        <div class='container'>
             <div>
                 <p>Mapa do site:</p>
                 <ul>
@@ -86,6 +113,26 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </div>
+
+            <div>
+                <p>Fale conosco: </p>
+                <p>Tel: <a href='tel:+551399999999'>(13)9999-9999</a></p>
+                <p>E-mail: <a href="mailto:contato@quadruplos.com.br">contato@quadruplos.com.br</a></p>
+            </div>
+
+            <div id='btn'>
+                <a class='link-top hide' href="#menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+                <span class="screen-reader-text">Back to top</span><!--pense nisso como uma tag alt para uma imagem-->
+                </a>
+            </div>
+            
+            <div class='logo'><img src="imagens/logo2_pqn.png" alt="Logo Quadruplos"></div>
+        </div>
+        <div id='rodape'>
+            <p><a href="https://github.com/GabrielMarmore" target="_blank">@Mármore</a></p>
+            <p>© 2021 Quadruplos Turismo e Viagens, all rights reserved</p>
+        </div>
         </footer>
 </body>
 </html>
