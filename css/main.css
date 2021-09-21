@@ -401,7 +401,7 @@ svg {
 	font-family: var(--destaque);
 }
 
-#rodape p,a{
+#rodape p, #rodape a{
 	font-size: 1.2rem;
 	margin: 0;
 	padding: 0;
