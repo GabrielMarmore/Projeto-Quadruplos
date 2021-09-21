@@ -15,6 +15,15 @@
   <li>A Empresa</li>
   <li>Contato</li>
 </ul>
+
+<h2>Recursos a serem implatados: </h2>
+<ul>
+  <li>✔️Slider</li>
+  <li>✔️Leia mais acordeon</li>
+  <li>✔️Botão volta ao topo</li>
+  <li>Responsividade</li>
+  <li>Formulario com PHP</li>
+</ul>
 <h2>Tecnologias</h2>
 
 <p>As seguintes ferramentas foram usadas na construção e atualização do projeto: </p>
