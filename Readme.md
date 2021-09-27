@@ -10,7 +10,7 @@
 <h2>Páginas a serem atualizadas: </h2>
 <ul>
   <li>Home - Feito</li>
-  <li>Nacional</li>
+  <li>Nacional - Andamento</li>
   <li>Internacional</li>
   <li>A Empresa</li>
   <li>Contato</li>
