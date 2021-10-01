@@ -187,25 +187,19 @@ function ofertas(){
     });
 }
 
-function topo(){
+function topo(ybtn){
     const btn = document.querySelector('.link-top');
     window.addEventListener("scroll", function(){
-        let y = window.scrollY;
-        if(y>550){
+        //let y = window.scrollY;
+        let y = window.pageYOffset;
+        if(y>ybtn){
             // Se usuário rolar além da altura da janela inicial.
             btn.className='link-top show';
-            console.log(y);
             
         }else{
             btn.className='link-top hide';
         }
     });
 }
-window.onload = function(){
-    iniciar();
-    ofertas();
-    topo();
-    leia();
-}
-//window.addEventListener('load', iniciar); //Ou usar <body onLoad='iniciar()'>
 
+//Sidebar

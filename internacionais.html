@@ -7,144 +7,208 @@
 	<link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	
-	<style>
-	h2{	
-		margin: 0px;
-		padding: 0px;
-		font-size: 1.2rem;
-		color: black;
-	}
-	h1{
-		font-size: 25px;
-		margin:5px 5px 5px 20px;
-		text-align: start;
-		margin-top: 10px;
-	}
-	.space{
-		margin:1px 10px 1px 20px;
-		text-align: start;
-	}
-	p{
-	font-size: 1.1rem
-	}
-	
-	.flex2{
-		display: block;
-		margin-top: 20px;
-	}
-		
-	div{
-		display: flex;
-		margin: 5px 5px 20px 20px;
-		background: #B0C4DE;
-		border-radius: 0.75%;
-		max-width: 90%;
-		flex-wrap: wrap;
-	}
-	
-	.flex2 img{
-		flex: 0 1 200px;
-		border-radius: 5%;
-		height: 230px;
-		width: 280px;
-	}
-	
-	.flex2 p{
-		max-width: 70%;
-		min-width: 50%;
-		margin: 30px;
-		font-size: 0.9rem;
-	}
-
-	.flex2 input{
-		padding: 5px;
-	}
-	
-	
-	</style>
+	<script src='main.js'></script>
 </head>
 
-<body>
-	<a href="#maincontent" class="skip-link"> Pular para o conteúdo principal.</a>
-    <header>
-		<ul>
-			<li><a href="home.html"><img src="imagens/logo3.png" alt="logo da empresa quadruplos"></a></li>
-			<li><p>Quádruplos Turismo e Viagens <br>Desperte o turista dentro de você!</p></li>
-		</ul>
+<body class='destinos' onLoad='topo(5200)'>
+	<header class='container'>
+        <h1><a href='#'>Quádruplos Turismo e Viagens</a></h1>
         <nav>
-            <ul class="menu">
-                <li><a href="home.html">Home</a></li>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="nacionais.html">Nacionais</a></li>
                 <li><a href="internacionais.html">Internacionais</a></li>
-                <li><a href="quemsomos.html">A Empresa</a></li> 
+                <li><a href="quemsomos.html">Empresa</a></li> 
 				<li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-	
-	<h1>Roteiros Internacionais</h1><hr class="space">
-	<p id="maincontent" tabindex="-1" class="space">Roteiros turísticos internacionais para os mais variados destinos nos cinco continentes, 
-	com tarifas especiais e todo o conforto e praticidade que você merece: aproveite a comodidade e a rapidez 
-	de ter tudo resolvido para você na hora de viajar!</p>
-	
-	<section class="flex2">
-	<div> <img src="imagens/internacionais/america-norte.png" alt="Imagem da América do Norte"> <p><strong>América do norte</strong><br>A América do Norte é muito diversificada, ela vai desde praias paradisíacas, reservas naturais e monumentos históricos, até a atmosfera urbana das metrópoles, passando por cidades que são consideradas parada obrigatória para quem deseja fazer compras. Há muito o que explorar na América do Norte! Um lugar recheado de diversão, mas que também oferece relaxamento, cultura, passeios temáticos e muito mais
-	<br><br>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.<br><br>
-		
-		<label><br>
-        <a href="contato.html"><input type="submit" size="40" value="Contato"></a>
-		</label>
-        </p></div>
-	
-	<div> <img src="imagens/internacionais/america-central.png" alt="Imagem da América Central"> <p><strong>América central</strong><br>A América Central sempre foi um destino um tanto quanto exótico e relativamente desconhecido para nosso País, apesar não ser muito conhecido, o continente é uma verdadeira festa para os olhos: paisagens belíssimas e uma natureza privilegiada dividem espaço com atividades culturais, atrações curiosas e uma diversidade sem igual. <br><br>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.<br><br>
-		
-		<label><br>
-        <a href="contato.html"><input type="submit" size="40" value="Contato"></a>
-		</label>
-        </p></div>
-	
-	<div> <img src="imagens/internacionais/america-sul.png" alt="Imagem América do Sul"> <p><strong>América do sul</strong><br>Para conhecer melhor o mundo, o latino-americano deve começar por sua própria casa, no caso pela América do Sul. Escolher a América do Sul como destino da próxima viagem é garantia de encontrar lugares fascinantes. De praias a desertos, de ilhas a cidades históricas passando por sítios arqueológicos de importância histórica única, acredite, não faltarão opções para você. 
-	<br><br>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.<br><br>
-		
-		<label><br>
-        <a href="contato.html"><input type="submit" size="40" value="Contato"></a>
-		</label>
-        </p></div>
-	
-	<div><img src="imagens/internacionais/europa.png" alt="Imagem da Europa"> <p><strong>Europa</strong><br>Quem nunca sonhou em conhecer o velho continente? A Europa é famosa pelos seus países cheios de história, cultura e belezas naturais. O turismo na Europa é bastante diversificado. O continente oferece opções de destinos tanto para os amantes de história e cultura, como para quem quer admirar paisagens magníficas. Lá estão as cidades mais charmosas e históricas do planeta. Já No interior do continente estão as paisagens: campos de flores, colinas e lagos, que dividem espaço com impressionantes castelos.
-	<br><br>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.<br>
-		
-		<label><br>
-        <a href="contato.html"><input type="submit" size="40" value="Contato"></a>
-		</label>
-        </p></div>
-		 
-	<div> <img src="imagens/internacionais/asia.png" alt="Imagem da Ásia"> <p><strong>Ásia</strong><br>É o maior continente do mundo tanto em tamanho quanto em população e, por causa da grande diversidade de países e culturas, esse é o destino certo para quem quer conhecer lugares realmente novos e diferentes. É ideal para conhecer lugares exóticos e inusitados, com outra cultura, aproveitar um sol e mar de águas limpas e transparentes, ir para festivais totalmente diferenciados do que você está acostumado ou até mesmo exercitar sua espiritualidade.
-	<br><br>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.<br>
-		
-		<label><br>
-        <a href="contato.html"><input type="submit" size="40" value="Contato"></a>
-		</label>
-        </p></div>
-		 
-	<div> <img src="imagens/internacionais/africa.png" alt="Imagem da África"> <p><strong>África</strong><br>Se você tem um espírito aventureiro, quer arrumar as malas e partir para uma nova viagem, deseja conhecer novos lugares e quer criar memórias inesquecíveis, a África é o seu destino. Você precisa pensar na possibilidade de conhecer a África, com certeza, as opções desse continente vão lhe surpreender. ele é repleto de países imperdíveis e cheios de possibilidades de programas únicos que você precisa conhecer, suas terras lindas e extensas, a natureza bela e exuberante e sua fauna totalmente diferenciada, incomparável, marcarão para sempre a sua imaginação. 
-	<br><br>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.<br>
-		
-		<label><br>
-        <a href="contato.html"><input type="submit" size="40" value="Contato"></a>
-		</label>
-        </p></div>
-		 
-	<div> <img src="imagens/internacionais/oceania.png" alt="Imagem da Oceania"> <p><strong>Oceania</strong><br>O menor dos continentes é, também, um dos mais versáteis destinos a ser desbravado, tanto para quem prefere uma boa estrutura e muito conforto para aproveitar o sol e o mar nas viagens, quanto para os mais aventureiros, que preferem mochila nas costas e muito passeio. Este pequeno continente possui lugares maravilhosos, paisagens incríveis que valem uma viagem. 
-	<br><br>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.<br><br>
-		
-		<label><br>
-        <a href="contato.html"><input type="submit" size="40" value="Contato"></a>
-		</label>
-        </p></div>
-	
-	</section>
-	
-	
+	<main>
+		<div>
+			<h1 class="destaque">Roteiros Internacionais</h1>
+			<p>Roteiros turísticos internacionais para os mais variados destinos nos cinco continentes, 
+			com tarifas especiais e todo o conforto e praticidade que você merece: aproveite a comodidade e a rapidez 
+			de ter tudo resolvido para você na hora de viajar!</p>
+		</div>
+
+		<section>
+			<div>
+				<h2>América do norte</h2>
+				<img src="imagens/internacionais/america-norte-horizontal.jpg" alt="Imagem da América do Norte">
+			</div>
+			<div>
+				<p>A América do Norte é muito diversificada, ela vai desde praias paradisíacas, reservas naturais e monumentos históricos, até a atmosfera urbana das metrópoles, passando por cidades que são consideradas parada obrigatória para quem deseja fazer compras. Há muito o que explorar na América do Norte! Um lugar recheado de diversão, mas que também oferece relaxamento, cultura, passeios temáticos e muito mais.</p>
+			</div>
+			<div>
+				<p>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.</p>
+				<a href="contato.html">
+					<button>
+						Contato
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" class="svg-inline--fa fa-comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"></path>
+						</svg>
+					</button>
+				</a>
+			</div>
+		</section>
+		<section>
+			<div>
+				<h2>América central</h2>
+				<img src="imagens/internacionais/america-central-horizontal.jpg" alt="Imagem da América Central">
+			</div>
+			<div>
+				<p>A América Central sempre foi um destino um tanto quanto exótico e relativamente desconhecido para nosso País, apesar não ser muito conhecido, o continente é uma verdadeira festa para os olhos: paisagens belíssimas e uma natureza privilegiada dividem espaço com atividades culturais, atrações curiosas e uma diversidade sem igual.
+				</p>
+			</div>
+			<div>
+				<p>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens</p>
+				<a href="contato.html">
+					<button>
+						Contato
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" class="svg-inline--fa fa-comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"></path>
+						</svg>
+					</button>
+				</a>
+			</div>
+		</section>
+		<section>
+		<div>
+			<h2>América do sul</h2>
+			<img src="imagens/internacionais/america-sul-horizontal.jpg" alt="Imagem América do Sul">
+		</div>
+		<div>
+			<p>
+			Para conhecer melhor o mundo, o latino-americano deve começar por sua própria casa, no caso pela América do Sul. Escolher a América do Sul como destino da próxima viagem é garantia de encontrar lugares fascinantes. De praias a desertos, de ilhas a cidades históricas passando por sítios arqueológicos de importância histórica única, acredite, não faltarão opções para você.
+			</p>
+		</div>
+			<div>
+				<p>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.</p>
+				<a href="contato.html">
+					<button>
+						Contato
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" class="svg-inline--fa fa-comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"></path>
+						</svg>
+					</button>
+				</a>
+			</div>
+		</section>
+		<section>
+			<div>
+				<h2>Europa</h2>
+				<img src="imagens/internacionais/europa-horizontal.jpg" alt="Imagem da Europa">
+			</div>
+			<div>
+				<p>Quem nunca sonhou em conhecer o velho continente? A Europa é famosa pelos seus países cheios de história, cultura e belezas naturais. O turismo na Europa é bastante diversificado. O continente oferece opções de destinos tanto para os amantes de história e cultura, como para quem quer admirar paisagens magníficas. Lá estão as cidades mais charmosas e históricas do planeta. Já No interior do continente estão as paisagens: campos de flores, colinas e lagos, que dividem espaço com impressionantes castelos.
+				</p>
+			</div>
+			<div>
+				<p>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.</p>
+
+				<a href="contato.html">
+					<button>
+						Contato
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" class="svg-inline--fa fa-comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"></path>
+						</svg>
+					</button>
+				</a>
+			</div>
+		</section>
+		<section>
+			<div>
+				<h2>Ásia</h2>
+				<img src="imagens/internacionais/asia-horizontal.jpg" alt="Imagem da Ásia">
+			</div>
+			<div>
+				<p>
+				É o maior continente do mundo tanto em tamanho quanto em população e, por causa da grande diversidade de países e culturas, esse é o destino certo para quem quer conhecer lugares realmente novos e diferentes. É ideal para conhecer lugares exóticos e inusitados, com outra cultura, aproveitar um sol e mar de águas limpas e transparentes, ir para festivais totalmente diferenciados do que você está acostumado ou até mesmo exercitar sua espiritualidade.
+				</p>
+			</div>
+			<div>
+				<p>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.</p>
+
+				<a href="contato.html">
+					<button>
+						Contato
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" class="svg-inline--fa fa-comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"></path>
+						</svg>
+					</button>
+				</a>
+			</div>
+		</section>
+
+		<section>
+		<div>
+			<h2>África</h2> 
+			<img src="imagens/internacionais/africa-horizontal.jpg" alt="Imagem da África"> 
+		</div>
+		<div>
+			<p>Se você tem um espírito aventureiro, quer arrumar as malas e partir para uma nova viagem, deseja conhecer novos lugares e quer criar memórias inesquecíveis, a África é o seu destino. Você precisa pensar na possibilidade de conhecer a África, com certeza, as opções desse continente vão lhe surpreender. ele é repleto de países imperdíveis e cheios de possibilidades de programas únicos que você precisa conhecer, suas terras lindas e extensas, a natureza bela e exuberante e sua fauna totalmente diferenciada, incomparável, marcarão para sempre a sua imaginação.</p>
+		</div>
+		<div>
+			<p>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.</p>
+
+			<a href="contato.html">
+				<button>
+					Contato
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" class="svg-inline--fa fa-comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"></path>
+					</svg>
+				</button>
+			</a>
+		</div>
+		</section>
+
+		<section>
+		<div>
+			<h2>Oceania</h2>
+			<img src="imagens/internacionais/oceania-horizontal.jpg" alt="Imagem da Oceania">
+		</div>
+		<div>
+			<p>O menor dos continentes é, também, um dos mais versáteis destinos a ser desbravado, tanto para quem prefere uma boa estrutura e muito conforto para aproveitar o sol e o mar nas viagens, quanto para os mais aventureiros, que preferem mochila nas costas e muito passeio. Este pequeno continente possui lugares maravilhosos, paisagens incríveis que valem uma viagem.</p>
+		</div>
+		<div>
+			<p>Você pode saber muito mais entrando em contato com a Quádruplos Turismo e Viagens.</p>
+
+			<a href="contato.html">
+				<button>
+					Contato
+					<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" class="svg-inline--fa fa-comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"></path>
+					</svg>
+				</button>
+			</a>
+		</div>
+		</section>
+	</main>
+	<footer>
+        <div class='container'>
+            <div>
+                <p>Mapa do site:</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nacionais.html">Nacionais</a></li>
+                    <li><a href="internacionais.html">Internacionais</a></li>
+                    <li><a href="contato.html">Empresa</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <p>Fale conosco: </p>
+                <p>Tel: <a href='tel:+551399999999'>(13)9999-9999</a></p>
+                <p>E-mail: <a href="mailto:contato@quadruplos.com.br">contato@quadruplos.com.br</a></p>
+            </div>
+
+            <div id='btn'>
+                <a class='link-top hide' href="#menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+                <span class="screen-reader-text">Back to top</span><!--pense nisso como uma tag alt para uma imagem-->
+                </a>
+            </div>
+            
+            <div class='logo'><img src="imagens/logo2_pqn.png" alt="Logo Quadruplos"></div>
+        </div>
+        <div id='rodape'>
+            <p><a href="https://github.com/GabrielMarmore" target="_blank">@Mármore</a></p>
+            <p>© 2021 Quadruplos Turismo e Viagens, all rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html> 

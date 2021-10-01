@@ -41,6 +41,7 @@ header{
 	background-color: var(--cor0);
 	box-shadow: 0 0 15px rgb(0,0,0,0.5);
 	padding-bottom: 5px;
+	margin-bottom: 15px;
 }
 
 header.container{
@@ -130,7 +131,6 @@ padding: 5px 10px;
 	1 div no meio
 	1 button na esquerda*/
 
-	/*border:1px solid rgba(0, 0, 0, 0.8);*/
 	box-shadow: 0px 0 10px rgba(0,0,0,0.5);
 }
 
@@ -189,7 +189,7 @@ span{
 }
 
 h2{
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-weight: normal;
 
 	color: var(--cor3);
@@ -275,7 +275,7 @@ strong{
 	font-family: var(--destaque2);
 }
 
-section div.container div{
+#segundo div.container div{
 	background-color: var(--cor0);
 	border-radius: 15px;
 	height: auto;
@@ -284,10 +284,10 @@ section div.container div{
 	transition: 0.4s;
 }
 
-section div.container div:hover{
+#segundo div.container div:hover{
 	background-color: var(--cor3);
 }
-section div.container div img{
+#segundo div.container div img{
 	margin-bottom: -5px;
 	border-radius: 0 0 15px 15px;
 }
@@ -314,7 +314,7 @@ footer a:hover{
 	color: var(--cor1);
 }
 footer div{
-	margin: 15px 30px;
+	padding: 5px 30px;
 }
 footer li,ul,p,a{
 	padding-top: 5px;
@@ -414,6 +414,103 @@ svg {
 
 .skip-link:focus {
 	top: 0;
+}
+/*Nacionais e internacionais*/
+
+.destinos{
+	background-image: linear-gradient(to bottom, #fff, var(--cor2),var(--cor1), var(--cor3));
+}
+.destinos main{
+	/*responsividade*/
+	max-width: 900px;
+	min-width: 280px;
+	margin: auto;
+
+	margin-bottom: 40px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+
+	line-height: 170%;
+}
+
+.destinos section{
+	margin: 20px 0px;
+	padding: 20px;
+
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.destinos section h2{
+	margin-bottom: 25px;
+}
+/* Responsividade texto e imagens*/
+.destinos section div{
+	max-width: 800px;
+}
+
+.destinos section>div:last-child{
+	text-align: center;
+}
+
+.destinos section div p, .destinos section div img {
+	width: 100%;
+}
+
+.destinos main>div{
+	max-width: 800px;
+	
+	font-size: 1.4em;
+	line-height: 185%;
+	text-align: justify;
+	
+	margin-bottom: 30px;
+
+}
+
+/*botão*/
+.destinos section div button{
+    margin-top: 10px;
+    padding: 15px 15px 15px 25px;
+
+	cursor: pointer;
+
+	font-size: 1.1em;
+	font-weight: bold;
+
+    border-radius: 15px;
+
+	background-color: #fff;
+	color:var(--cor3);
+	
+	border: 2px solid  var(--cor3);
+	box-shadow:0px 5px 0px var(--cor3);
+
+	transition: 0.6s;
+}
+
+.destinos section div button:hover{
+	box-shadow:1px 1px 5px rgba(0, 0, 0, 0.4);
+	/*box-shadow:0px 5px 0px var(--cor0);*/
+	/*border: 2px solid var(--cor0);*/
+
+	background-color: var(--cor3);
+	color: #fff;
+
+}
+/*svg icon*/
+.destinos section div button svg{
+	height: 1.2em;
+	overflow: visible;
+	margin: 0 5px -2px 5px;
 }
 
 /*CSS FORMULÁRIO*/

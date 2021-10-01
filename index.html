@@ -25,7 +25,7 @@
     <script src='main.js'></script>
 </head>
 
-<body>
+<body onLoad="iniciar(), ofertas(),leia(), topo(600);">
     <header class='container'>
         <h1><a href='#nacional'>Quádruplos Turismo e Viagens</a></h1>
         <nav>
@@ -43,11 +43,11 @@
         
         <div class='backg'>
             <div class='slider'>
-                <button class='btslider' onclick='troca(-1)'><</button>
+                <button class='btslider' onclick='troca(-1)'> &lt; </button>
                 <div id='dvload'>
                     <div id='dvbarra'></div>
                 </div>
-                <button class='btslider' onclick='troca(1)'>></button>
+                <button class='btslider' onclick='troca(1)'> &gt; </button>
             </div>
         </div>
 
@@ -70,7 +70,7 @@
             <strong>melhores dicas</strong>. Viaje com a gente nessa nova jornada, explore nosso site e agende uma consulta na nossa empresa para sair com a melhor
             viagem da sua vida.
             </p>
-            <button class='leia'">Leia mais</button>
+            <button class='leia'>Leia mais</button>
             
             <span id='leiaMais'>
             <p>Somos uma Empresa familiar, tudo começou com nosso pai José que criou em 1990 uma pequena empresa de turismo,
@@ -108,7 +108,7 @@
             <div>
                 <p>Mapa do site:</p>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="nacionais.html">Nacionais</a></li>
                     <li><a href="internacionais.html">Internacionais</a></li>
                     <li><a href="contato.html">Empresa</a></li>
