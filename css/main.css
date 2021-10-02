@@ -26,13 +26,18 @@
 --destaque: sky, cursive;
 --destaque2: poetsen, sky, cursive;
 }
-
+/*reset*/
 *{
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
 	text-decoration: none;
 }
+
+img{
+	width: 100%;
+}
+
 
 /*header e menu*/
 	
@@ -42,6 +47,8 @@ header{
 	box-shadow: 0 0 15px rgb(0,0,0,0.5);
 	padding-bottom: 5px;
 	margin-bottom: 15px;
+
+	min-width: 285px;
 }
 
 header.container{
@@ -117,10 +124,6 @@ padding: 5px 10px;
 
     margin: auto;
 	height: 300px;
-	/*
-	depois eu penso em resposividade
-	max-height: 300px;
-	min-height: 225px;*/
 	
 	align-items: center;
 
@@ -184,7 +187,7 @@ padding: 5px 10px;
 	margin-bottom: 40px;
 }
 /*Quebra de linha*/
-span{
+span:not(p>span:first-child){
 	display: block;
 }
 
@@ -199,7 +202,8 @@ h2{
 	text-align: center;
 }
 section{
-	margin: 20px 80px;
+	margin: 20px 5%;
+	/*margin dos lados em % para dar responsividade*/
 	
 	text-align: justify;
 }
@@ -265,6 +269,10 @@ strong{
 	margin: 40px 40px 60px 40px;
 }
 
+#segundo{
+	margin: 15px 10%;
+}
+
 #segundo .destaque{
 	font-size: 1.4rem;
 	margin-top: -10px;
@@ -273,16 +281,23 @@ strong{
 	font-size: 1.3rem;
 	color: #fff;
 	font-family: var(--destaque2);
+	height: 25px;
 }
 
 #segundo div.container div{
 	background-color: var(--cor0);
 	border-radius: 15px;
-	height: auto;
+	margin: 0 8%;
+	
+	max-height: 250px;
 
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
-	transition: 0.4s;
+	transition: 0.5s;
 }
+#segundo div.container div img{
+	min-width: 300px;
+}
+
 
 #segundo div.container div:hover{
 	background-color: var(--cor3);
@@ -291,6 +306,7 @@ strong{
 	margin-bottom: -5px;
 	border-radius: 0 0 15px 15px;
 }
+/*Rodapé*/
 footer{
 	background-color: var(--cor0);
 	color: white;
@@ -314,7 +330,7 @@ footer a:hover{
 	color: var(--cor1);
 }
 footer div{
-	padding: 5px 30px;
+	padding: 5px 2.5%;
 }
 footer li,ul,p,a{
 	padding-top: 5px;
@@ -332,7 +348,7 @@ footer li,ul,p,a{
 .link-top{
 	transition: all 0.25s ease-in-out;
 	position: fixed;
-	bottom: 15px;
+	top:50%;
 	left: 42.5%;
 
 	display: inline-flex;
@@ -340,11 +356,15 @@ footer li,ul,p,a{
 	cursor: pointer;
 	align-items: center;
 	justify-content: center;
+	
 	margin: 3em;
+
 	border-radius: 50%;
 	padding: 0.25em;
+	
 	width: 80px;
 	height: 80px;
+	
 	background-color: #fff;
 	box-shadow: 0 0 15px rgba(0,0,0,0.4);
 	}
@@ -391,7 +411,6 @@ svg {
         font-size: 1em;
         clip: auto !important;
 }
-/*Rodapé*/
 #rodape{
 	text-align: center;
 	margin: 30px 0 0 0;
@@ -403,17 +422,7 @@ svg {
 
 #rodape p, #rodape a{
 	font-size: 1.2rem;
-	margin: 0;
-	padding: 0;
-}
-.skip-link {
-	position: absolute;
-	background-color: midnightblue;
-	color: white;
-}
 
-.skip-link:focus {
-	top: 0;
 }
 /*Nacionais e internacionais*/
 
@@ -436,8 +445,11 @@ svg {
 	line-height: 170%;
 }
 
+.destinos main div:first-child>p{
+	margin: 0 5%;
+}
 .destinos section{
-	margin: 20px 0px;
+	margin: 20px 5%;
 	padding: 20px;
 
 	background-color: #fff;
@@ -559,4 +571,65 @@ td th{
 table{
 	margin: 10px;
 	margin-left: 40px;
+}
+
+/* Para celulares e afins*/
+@media (max-width: 760px){
+	html{
+		font-size: 14px;
+	}
+
+	.logo,#btn,#dvload,#segundo{
+		display: none;
+	}
+
+	.destaque:first-child{
+		font-size: 2rem;
+		margin: 15px 4px 40px 4px;
+	}
+
+	.destaque{
+		font-size: 1.6rem;
+	}
+	footer div.container{
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items:flex-start;
+	}
+	footer div.container div{
+		margin: 20px 0;
+		font-size: 1.2rem;
+	}
+
+	#rodape p{
+		margin: 0 10%;
+	}
+	section{
+		margin: 25px 5%;
+	}
+	.destaque>span{
+		display: none;
+	}
+}
+
+@media (max-width: 400px){
+	html{
+		font-size: 12px;
+	}
+
+	header h1{
+		font-size: 1.6rem;
+	}
+	#menu{
+		margin-right: 0;
+	}
+	#menu>li{
+		margin: 3px; 
+	}
+	#menu>li:last-of-type{
+		margin:5px 0;
+	}
+	#menu>li>a{
+	font-size: 1rem;
+	}
 }

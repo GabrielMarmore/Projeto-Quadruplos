@@ -167,22 +167,26 @@ function ofertas(){
 
     nacional.addEventListener('mouseover',function(){
         //textnacional.style.maxHeight = textnacional.scrollHeight + "px";
+        textnacional.style.fontSize="1rem";
         textnacional.innerHTML='Opções de viagens por todo o Brasil!';
       
     })
     inter.addEventListener('mouseover', function(){
         //textinter.style.maxHeight = textinter.scrollHeight + "px";
+        textinter.style.fontSize="1rem";
         textinter.innerHTML='Opções de viagens por todo o mundo!';
         
     });
 
     nacional.addEventListener('mouseleave', function(){
         //textnacional.style.maxHeight = null;
+        textnacional.style.fontSize="1.3rem";
         textnacional.innerHTML='Nacional';
     });
 
     inter.addEventListener('mouseleave', function(){
         //textinter.style.maxHeight = null;
+        textinter.style.fontSize="1.3rem";
         textinter.innerHTML='Internacional';
     });
 }
