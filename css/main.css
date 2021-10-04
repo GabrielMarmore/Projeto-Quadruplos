@@ -524,14 +524,15 @@ svg {
 	overflow: visible;
 	margin: 0 5px -2px 5px;
 }
-/*A empresa*/
-#empresa main{
+
+/*A empresa e contato com formulario*/
+#empresa main, #contato main{
 	margin: 0 5%;
 }
-#empresa main a{
+#empresa main a, #contato main a{
 	color: var(--cor3);
 }
-#empresa main a:hover{
+#empresa main a:hover, #contato main a:hover{
 	color: var(--cor0);
 	text-decoration: underline;
 }
@@ -572,41 +573,33 @@ th{
 	margin-bottom: 40px;
 
 }
-/*CSS FORMULÁRIO*/
 
-.titulocontato {
-	font-size: 32px;
-	color: midnightblue;
-	border-bottom: 1px solid silver;
-	margin-left: 40px;
-	margin-bottom: 15px;
-	font-family: 'Times New Roman', Times, serif;
-	text-align: left;
-}
-
-.textocont{
-	margin-left: 40px;
-	font-size: 16px;
-}
-label{
-	color: midnightblue;
-	font-weight: bold;
-}
-
-.botao{
-	background-color: midnightblue;
-	color:white;
-	width: 75px;
-	height: 25px;
-	cursor: pointer;
+#contato main div:not(.container), #contato form{
+	max-width: 900px;
+	
+	font-size: 1.2em;
+	line-height: 150%;
+	text-align: center;
+	
+	margin: auto;
 	margin-bottom: 40px;
 }
 
-input:hover, select:hover, textarea:hover{
-	border: 2px solid midnightblue;
+input, textarea{
+    width:100%;
+    margin: 3px 0px;
+    padding: 10px;
 }
-input:focus, select:focus, textarea:focus{
-	background-color: linen;
+select{
+	padding: 10px;
+	margin: 5px;
+}
+input[type="submit"]{
+    width: auto;
+    margin-top: 10px;
+    padding: 15px 50px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
 }
 
 /* Para celulares e afins*/
