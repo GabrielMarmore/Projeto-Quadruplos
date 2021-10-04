@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://gabrielmarmore.github.io/Projeto-Quadruplos/">🔗Quadruplos Turismo e Viagens - Em Andamento</a>
+  <a href="https://gabrielmarmore.github.io/Projeto-Quadruplos/">🔗Quadruplos Turismo e Viagens</a>
 </h1>
 <p>Atualização de projeto antigo, entregue em Novembro de 2020. Realizei esse projeto no segundo semestre da faculade como prova para a disciplica PPS2, referente a <strong>HTML5</strong>, <strong>CSS3</strong> e, somente para validação de formulário, <strong>JavaScript</strong>.</p>
 
