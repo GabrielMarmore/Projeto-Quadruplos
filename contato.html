@@ -4,50 +4,41 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width-device-width, initial-scale=1"> 
 	<title>Contatos - Quádruplos Turismo e Viagens</title>
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    
     <script src="form_erros.js"></script>
+    <script src='main.js'></script>
 </head>
 
-<body>
-    <a href="#maincontent" class="skip-link"> Pular para o conteúdo principal.</a>
-    <header>
-		<ul>
-			<li><a href="home.html"><img src="imagens/logo3.png" alt="logo da empresa quadruplos"></a></li>
-			<li><p>Quádruplos Turismo e Viagens <br>Desperte o turista dentro de você!</p></li>
-		</ul>
+<body id='contato' onLoad='topo(400)'>
+    <header class='container'>
+        <h1><a href='#nacional'>Quádruplos Turismo e Viagens</a></h1>
         <nav>
-            <ul class="menu">
-                <li><a href="home.html">Home</a></li>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="nacionais.html">Nacionais</a></li>
                 <li><a href="internacionais.html">Internacionais</a></li>
-                <li><a href="quemsomos.html">A Empresa</a></li> 
-				<li><a href="contato.html">Contato</a></li>           
+                <li><a href="quemsomos.html">Empresa</a></li> 
+				<li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-	</header>
-    <div class="body">
-        <h1 class="titulocontato">Agende uma reunião</h1>
-        <p id="maincontent" tabindex="-1" class="textocont">
-            <span><strong>Quádruplos Turismo e Viagens</strong></span>
-            <span> <strong>Endereço:</strong> Av Dr. Ana Costa, 1200 - Vila Matias</span>
-            <span> <strong>CEP:</strong> 11060-002</span>
-            <span><strong>Tel:</strong> (13) 3251-597</span>
-            <span> <strong>E-mail:</strong> contato@quadruplos.com.br</span>
-            <span>   <span> <strong>Diretores:</strong> Arthur, Bruno, Davi e Rodrigo</span>
-            <span>  <strong>Cosultores:</strong></span>
-            <span> Juliana e Gabriela - Experts nas Regiões Norte e Nordeste</span>
-            <span> Camila e Júlio- Experts na Região Centro-oeste</span>
-            <span> Caio e Lucas - Experts nas Regiões Sudeste e Sul</span>
-            <span> Rafael, Henrique e Julia- Experts nas 3 américas (Norte, Central e Sul)</span>
-            <span> Gustavo e Gabriel- Experts na Europa</span>
-            <span> Giulia e Douglas- Experts na Ásia</span>
-            <span> Mariano e Raquel- Experts na África</span>
-            <span> Joel- Expert na Oceania</span>
-        </p>
-</div>
-    <form class="textocont" name="Q_Reuniao" method="POST" action="#" onsubmit="return validaForm(this)">
-<div class="textocont">
-    <label for="Q_reuniao">Assunto da Reunião:</label><br>
+    </header>
+    <main>
+        <div>
+            <h2 class="destaque">Agende uma reunião</h2>
+            <p tabindex="-1" class="textocont">
+                Por email, telefone ou pelo <a href='#Q_reunião'>formulario de contato</a>.
+                <span><strong>Tel:</strong><a href='tel:+551399999999'>(13)9999-9999</a></span>
+                <span><strong>E-mail:</strong><a href="mailto:contato@quadruplos.com.br">contato@quadruplos.com.br</a></span>
+
+                <span><span><strong>Diretores:</strong> Arthur, Bruno, Davi e Rodrigo</span>
+            </p>
+        </div>
+
+    <form name="Q_Reuniao" method="POST" action="#" onsubmit="return validaForm(this)">
+    <label for="Q_reuniao">Assunto da Reunião:</label>
+    <span>
         <select id="Q_reunião">
             <option value="nort">Norte</option>
             <option value="nord">Nordeste</option>
@@ -61,38 +52,62 @@
             <option value="As">Ásia</option>
             <option value="Afr">África</option>
             <option value="Oce">Oceania</option>
-        </select><br><br>
-    
+        </select>
+    </span>
+    <span>
         <label for="Q_nome">Nome*:<br></label>
-        <input type="text" id="Q_nome" size="40" maxlength="40" aria-required="true"/> <br><br>
-        
-        <label for="Q_telefone">Telefone:</label><br>
-        <input type="tel" id="Q_telefone" size="40"/> <br><br>
-        
+        <input type="text" id="Q_nome" size="40" maxlength="40" aria-required="true"/>
 
-        <label for="Q_email">E-mail*:</label><br>
-        <input type="email" id="Q_email" size="40" aria-required="true"/> <br><br>
+        <label for="Q_email">E-mail*:</label>
+        <input type="email" id="Q_email" size="40" aria-required="true"/>
+   
+        <label for="Q_telefone">Telefone:</label>
+        <input type="tel" id="Q_telefone" size="40"/>
         
-
-        <label for="data">Data e horário*:</label><br>
-        <input type="datetime-local" id="Q_data" aria-required="true"/><br><br>
-        
-        <label for="Q_cometario">Comentário</label><br>
-        <textarea id="Q_comentario" cols="45" rows="5"></textarea><br><br>
-        
+        <label for="data">Data e horário:</label>
+        <input type="datetime-local" id="Q_data" aria-required="true"/>
+    
+        <label for="Q_cometario">Comentário:</label>
+        <textarea id="Q_comentario" cols="45" rows="3"></textarea>
+    </span>
 
         <input class="botao" type="submit" value="Enviar"/>
+    
     </form>
-</div>
-    <footer id="rodape">
-        <address class="rodape">
-           <span> Av Dr. Ana Costa, 1200 - Vila Matias </span>
-           <span> Santos- SP</span>
-           <span>CEP: 11060-002</span>
-            <span>Tel: (13) 3251-5972</span>
-            <span> E-mail: contato@quadruplos.com.br</span>
-                <span>Todos os direitos reservados ao site www.quadruplosturismoeviagens.com.br</span>
-        </address>
+
+    </main>
+    <footer>
+    <div class='container'>
+        <div>
+            <p>Mapa do site:</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nacionais.html">Nacionais</a></li>
+                <li><a href="internacionais.html">Internacionais</a></li>
+                <li><a href="contato.html">Empresa</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p>Fale conosco: </p>
+            <p>Tel: <a href='tel:+551399999999'>(13)9999-9999</a></p>
+            <p>E-mail: <a href="mailto:contato@quadruplos.com.br">contato@quadruplos.com.br</a></p>
+        </div>
+
+        <div id='btn'>
+            <a class='link-top hide' href="#menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+            <span class="screen-reader-text">Back to top</span><!--pense nisso como uma tag alt para uma imagem-->
+            </a>
+        </div>
+        
+        <div class='logo'><img src="imagens/logo2_pqn.png" alt="Logo Quadruplos"></div>
+    </div>
+    <div id='rodape'>
+        <p><a href="https://github.com/GabrielMarmore" target="_blank">@Mármore</a></p>
+        <p>© 2021 Quadruplos Turismo e Viagens, all rights reserved</p>
+    </div>
     </footer>
 </body>
 </html>

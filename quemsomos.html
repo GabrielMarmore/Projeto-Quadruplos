@@ -4,91 +4,125 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width-device-width, initial-scale=1">
 	<title>Quem somos - Quádruplos Turismo e Viagens</title>
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script src='main.js'></script>
 </head>
 
-<body>
-    <a href="#maincontent" class="skip-link" style="padding: 5px;"> Pular para o conteúdo principal.</a>
-    <header>
-		<ul>
-			<li><a href="home.html"><img src="imagens/logo3.png" alt="logo da empresa quadruplos"></a></li>
-			<li><p>Quádruplos Turismo e Viagens <br>Desperte o turista dentro de você!</p></li>
-		</ul>
+<body  id='empresa' onLoad="topo(600)">
+    <header class='container'>
+        <h1><a href='#nacional'>Quádruplos Turismo e Viagens</a></h1>
         <nav>
-            <ul class="menu">
-                <li><a href="home.html">Home</a></li>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="nacionais.html">Nacionais</a></li>
                 <li><a href="internacionais.html">Internacionais</a></li>
-                <li><a href="quemsomos.html">A Empresa</a></li> 
-				<li><a href="contato.html">Contato</a></li>           
+                <li><a href="quemsomos.html">Empresa</a></li> 
+				<li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-	</header>
-    <div class="body">
-        <h1 class="titulocontato">Quem Somos</h1>
-        <p id="maincontent" tabindex="-1" class="textocont">
-            A <strong>Quádruplos Turismo e Viagens</strong> é uma empresa que trabalha com um valor diferenciado no mercado: <strong>Atendimento personalizado ao cliente.</strong>
-            Ao entrar em contato conosco você será atendido por pessoas que realmente entendem do assunto, sendo informado sobre os melhores
-             destinos, os lugares para se hospedar e com as melhores ofertas, além de locais para diversão, entretenimento e lazer. 
-             Tudo de acordo com o seu gosto e o seu bolso. Nossa equipe é composta de profissionais competentes e totalmente qualificados na 
-             área, além de uma estrutura organizada e preparada para receber bem e satisfazer todas suas necessidades. Nossa missão é trabalhar para 
-             que o cliente desfrute da satisfação de viajar em sua plenitude, nossa visão é buscar perfeição em todos os atendimentos e nosso objetivo
-             é transformar cada reunião em uma viagem dos seus sonhos, transformando você em um cliente fiel.
+    </header>
+    <main>
+        <h1 class="destaque">Quádruplos Turismo e Viagens</h1>
+        <section>
+            <h2>Quem Somos</h1>
+            <p tabindex="-1">
+                Somos é uma empresa que trabalha com um valor diferenciado no mercado: <strong>Atendimento personalizado ao cliente.</strong>
+                Ao entrar em contato conosco você será atendido por pessoas que realmente entendem do assunto, sendo informado sobre os melhores
+                destinos, os lugares para se hospedar e com as melhores ofertas, além de locais para diversão, entretenimento e lazer.
+                <span class='destaque'>Tudo de acordo com o seu gosto e o seu bolso!</span> <span>Nossa equipe é composta de profissionais competentes e totalmente qualificados na área, além de uma estrutura organizada e preparada para receber bem e satisfazer todas suas necessidades. Nossa missão é trabalhar para 
+                que o cliente desfrute da satisfação de viajar em sua plenitude, nossa visão é buscar perfeição em todos os atendimentos e nosso objetivo
+                é transformar cada reunião em uma viagem dos seus sonhos, transformando você em um cliente fiel.</span>
+            </p>
+            <p class='centralizado'>Conheça mais sobre nossa historia ➡️<a href="index.html#hist">clicando aqui!</a>⬅️</p>
+        </section>
 
-        </p>
-        <p class="textocont">Conheça mais sobre nós <a href="imagens/Quadruplos.pdf">clicando aqui!!</a></p>
-        <h1 class="titulocontato">Nossa equipe</h1>
-        <p class="textocont">
-        <table border="1">
-            <caption> <strong>Consultores e suas Especialidades</strong></caption>
-            <tr>
-                <th>Nome</th>
-                <th>Região</th>
-            </tr>
-            <tr>
-                <td>Juliana e Gabriela</td>
-                <td>Norte e Nordeste</td>
-            </tr>
-            <tr>
-                <td>Camila e Júlio</td>
-                <td>Centro-oeste</td>
-            </tr>
-            <tr>
-                <td>Caio e Lucas</td>
-                <td>Sudeste e Sul</td>
-            </tr>
-            <tr>
-                <td>Rafael, Henrique e Julia</td>
-                <td>3 américas (Norte, Central e Sul)</td>
-            </tr>
-            <tr>
-                <td>Gustavo e Gabriel</td>
-                <td>Europa</td>
-            </tr>
-            <tr>
-                <td> Giulia e Douglas</td>
-                <td>Ásia</td>
-            </tr>
-            <tr>
-                <td>Mariano e Raquel</td>
-                <td>África</td>
-            </tr>
-            <tr>
-                <td>Joel</td>
-                <td>Oceania</td>
-            </tr>
-        </table>
-        </p> 
-        </div>
-        <footer id="rodape">
-            <address class="rodape">
+        <section>
+        <h2>Nossa equipe</h1>
+            <table border="1">
+                <caption>Consultores e suas Especialidades</caption>
+                <tr>
+                    <th>Nome</th>
+                    <th>Região</th>
+                </tr>
+                <tr>
+                    <td>Juliana e Gabriela</td>
+                    <td>Norte e Nordeste</td>
+                </tr>
+                <tr>
+                    <td>Camila e Júlio</td>
+                    <td>Centro-oeste</td>
+                </tr>
+                <tr>
+                    <td>Caio e Lucas</td>
+                    <td>Sudeste e Sul</td>
+                </tr>
+                <tr>
+                    <td>Rafael, Henrique e Julia</td>
+                    <td>3 américas (Norte, Central e Sul)</td>
+                </tr>
+                <tr>
+                    <td>Gustavo e Gabriel</td>
+                    <td>Europa</td>
+                </tr>
+                <tr>
+                    <td> Giulia e Douglas</td>
+                    <td>Ásia</td>
+                </tr>
+                <tr>
+                    <td>Mariano e Raquel</td>
+                    <td>África</td>
+                </tr>
+                <tr>
+                    <td>Joel</td>
+                    <td>Oceania</td>
+                </tr>
+            </table>
+        </section>
+        
+        <address>
+            <h2>Nosso endereço</h2>
+            <div class='centralizado'>
                 <span> Av Dr. Ana Costa, 1200 - Vila Matias </span>
                 <span> Santos- SP</span>
-                    <span> CEP: 11060-002 </span>
-                        <span>Tel: (13) 3251-5972 </span>
-                            <span>E-mail: contato@quadruplos.com.br</span>
-                                <span>Todos os direitos reservados ao site www.quadruplosturismoeviagens.com.br</span>
-            </address>
-        </footer>
+                <span> CEP: 11060-002 </span>
+            </div>
+         </address>
+
+        </main>
+         <footer>
+            <div class='container'>
+                <div>
+                    <p>Mapa do site:</p>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="nacionais.html">Nacionais</a></li>
+                        <li><a href="internacionais.html">Internacionais</a></li>
+                        <li><a href="contato.html">Empresa</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <p>Fale conosco: </p>
+                    <p>Tel: <a href='tel:+551399999999'>(13)9999-9999</a></p>
+                    <p>E-mail: <a href="mailto:contato@quadruplos.com.br">contato@quadruplos.com.br</a></p>
+                </div>
+    
+                <div id='btn'>
+                    <a class='link-top hide' href="#menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+                    <span class="screen-reader-text">Back to top</span><!--pense nisso como uma tag alt para uma imagem-->
+                    </a>
+                </div>
+                
+                <div class='logo'><img src="imagens/logo2_pqn.png" alt="Logo Quadruplos"></div>
+            </div>
+            <div id='rodape'>
+                <p><a href="https://github.com/GabrielMarmore" target="_blank">@Mármore</a></p>
+                <p>© 2021 Quadruplos Turismo e Viagens, all rights reserved</p>
+            </div>
+            </footer>
 </body>
 </html>
