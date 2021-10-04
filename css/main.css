@@ -187,7 +187,7 @@ padding: 5px 10px;
 	margin-bottom: 40px;
 }
 /*Quebra de linha*/
-span:not(p>span:first-child){
+span:not(p.destaque>span:first-child){
 	display: block;
 }
 
@@ -524,7 +524,54 @@ svg {
 	overflow: visible;
 	margin: 0 5px -2px 5px;
 }
+/*A empresa*/
+#empresa main{
+	margin: 0 5%;
+}
+#empresa main a{
+	color: var(--cor3);
+}
+#empresa main a:hover{
+	color: var(--cor0);
+	text-decoration: underline;
+}
+#empresa section, address{
+	max-width: 900px;
+	
+	font-size: 1.2em;
+	line-height: 150%;
+	text-align: justify;
+	
+	margin: auto;
+}
+#empresa main span.destaque{
+	color: var(--cor3);
 
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
+	margin: 15px 5px;
+	font-size: 1.3rem;
+}
+table{
+	margin:auto;
+}
+
+th,tr,td{
+	padding: 5px;
+}
+
+th{
+	text-align: center;
+}
+.centralizado{
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+#empresa address{
+	margin-bottom: 40px;
+
+}
 /*CSS FORMULÁRIO*/
 
 .titulocontato {
@@ -560,17 +607,6 @@ input:hover, select:hover, textarea:hover{
 }
 input:focus, select:focus, textarea:focus{
 	background-color: linen;
-}
-
-/*Tabela*/
-
-td th{
-	padding: 5px;
-}
-
-table{
-	margin: 10px;
-	margin-left: 40px;
 }
 
 /* Para celulares e afins*/
@@ -618,18 +654,22 @@ table{
 	}
 
 	header h1{
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 	}
 	#menu{
 		margin-right: 0;
 	}
 	#menu>li{
-		margin: 3px; 
-	}
-	#menu>li:last-of-type{
-		margin:5px 0;
+		margin: 2px; 
 	}
 	#menu>li>a{
 	font-size: 1rem;
+	padding: 5px;
+	}
+	nav{
+		margin: auto;
+	}
+	#dvslider{
+		display: none;
 	}
 }
