@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://gabrielmarmore.github.io/Projeto-Quadruplos/">🔗Quadruplos Turismo e Viagens - Em Andamento</a>
+  <a href="https://gabrielmarmore.github.io/Projeto-Quadruplos/">🔗Quadruplos Turismo e Viagens</a>
 </h1>
 <p>Atualização de projeto antigo, entregue em Novembro de 2020. Realizei esse projeto no segundo semestre da faculade como prova para a disciplica PPS2, referente a <strong>HTML5</strong>, <strong>CSS3</strong> e, somente para validação de formulário, <strong>JavaScript</strong>.</p>
 
@@ -8,15 +8,15 @@
 <p>Agora no 4 semestre possuindo conhecimento de de Design e Navegabilidade decidi atualizar o projeto para colocar no meu portifolio e ter orgulho de dizer que fui eu que fiz. Não vou sair do escopo do projeto vou utilizar as as mesmas imagens, textos e tecnologias, apesar de eu ter adicionado um pouco de <strong>JavaScript</strong> em outras funcionalidades, além da validação de formulário</p>
 
 <p>Link Projeto atualizado: <a href="https://gabrielmarmore.github.io/Projeto-Quadruplos/">🔗gabrielmarmore.github.io/Projeto-Quadruplos/</a></p>
-<p>Assim que atualizar todas as páginas irei colocar aqui o link da versão antiga para comparação.</p>
+<p>Versão antiga está na branch 'old-version'</p>
 
-<h2>Páginas a serem atualizadas: </h2>
+<h2>Páginas atualizadas: </h2>
 <ul>
   <li>✔️Home</li>
   <li>✔️Nacional</li>
   <li>✔️Internacional</li>
-  <li>A Empresa</li>
-  <li>Contato</li>
+  <li>✔️A Empresa</li>
+  <li>✔️Contato</li>
 </ul>
 
 <h2>Recursos implatados: </h2>
