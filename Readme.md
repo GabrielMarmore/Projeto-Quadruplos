@@ -19,7 +19,7 @@
   <li>✔️Contato</li>
 </ul>
 
-<h2>Recursos implatados: </h2>
+<h2>Recursos implatados:</h2>
 <ul>
   <li>✔️Slider</li>
   <li>✔️Botão de Leia mais acordeon</li>
@@ -28,9 +28,9 @@
 </ul>
 <h2>Tecnologias</h2>
 
-<p>As seguintes ferramentas foram usadas na construção e atualização do projeto: </p>
+<p>As seguintes ferramentas foram usadas na construção e atualização do projeto:</p>
 <ul>
   <li><strong>HTML</strong>;</li>
   <li><strong>CSS</strong>;</li>
-    <li><strong>JS</strong>;</li>
+  <li><strong>JS</strong>;</li>
 </ul>
